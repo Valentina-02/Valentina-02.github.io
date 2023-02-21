@@ -1,0 +1,607 @@
+/*Agregamos la fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: url("Imagenes/Proyecto_web.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* SECCION I N I C I O. BARRA DE NAVEGACION SUPERIOR*/
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #4accd4;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+    color: #4accd4;
+}
+
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #4accd4;
+}
+
+
+/* SECCION I N I C I O. PRESENTACION*/
+
+#inicio .contenido .presentacion {
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 65px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h3 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 1200px;
+    margin: 25px auto;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+/* SECCION  A C E R C A  D E  M I */
+
+#acercademi {
+    margin: auto;
+    padding: 100px 15px 220px;
+    color: #000;
+    text-align: center;
+    background-color:#cdedef;;
+}
+
+#acercademi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#acercademi .fila-presentacion {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+#acercademi .fila-presentacion .contenedor-foto {
+    max-width: 400px;
+
+}
+
+#acercademi .fila-presentacion .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #d3d3d3;
+}
+
+#acercademi .fila-presentacion .acercademi {
+    margin: 0 40px;
+}
+
+#acercademi .fila-presentacion .acercademi h3 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-align: left
+}
+
+#acercademi .fila-presentacion .acercademi h3 span {
+    color: #4accd4;
+}
+
+#acercademi .fila-presentacion .acercademi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+#acercademi .fila-datos-personales h3{
+    margin: 30px auto;
+ 
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+#acercademi .fila-datos-personales ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    color:#565656
+}
+
+/*SECCION H A B I L I D A D E S*/
+
+#habilidades {
+    background: linear-gradient(#cdedef, rgba(33, 16, 16, .8)), url(Imagenes/lenguaje-programacion.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#habilidades .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#habilidades .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+#habilidades .fila .habilidades {
+    width: 300px;
+    height: 170px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#habilidades .fila .habilidades:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#habilidades .fila .habilidades h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .habilidades .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* SECCION I D I O M A S*/
+#idiomas {
+    padding: 100px 15px;
+    margin: auto;
+    text-align: center;
+    background-color: #cdedef;;
+}
+
+#idiomas .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#idiomas .contenedor-idiomas{
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+
+#idiomas .contenedor-idiomas p {
+    padding: 10px 0;
+    margin-right: 20px;
+    width: fit-content;
+    height: 30px;
+}
+
+#idiomas .contenedor-idiomas .barra {
+    background-color: #fff;
+    width: 100%;
+    height: 18px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+#idiomas .contenedor-idiomas .barra .barra-progreso {
+    background-color: #919191;
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+#idiomas .contenedor-idiomas .barra .barra-progreso span { 
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    font-weight: bold
+}
+
+/* SECCION E X P E R I E N C I A   L A B O R A L*/
+
+#experiencia-laboral {
+
+    padding: 100px 0;
+    margin: auto;
+    background-color:#cdedef;
+
+}
+
+#experiencia-laboral .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#experiencia-laboral .fila {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+#experiencia-laboral .fila .proyecto {
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#experiencia-laboral .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#experiencia-laboral .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#experiencia-laboral .fila .proyecto h4{
+    position: absolute;
+    left: 0;
+    top:0px;
+    text-align: center;
+    filter: grayscale(1);
+    background-color: #4accd4;
+    color: #494544;
+    width: 100%;
+    padding: 10px;
+}
+
+#experiencia-laboral .fila .proyecto:hover h4 {
+    filter: grayscale(0);
+}
+
+#experiencia-laboral .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    background-color: #4accd4;
+    color: #494544;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+#experiencia-laboral .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* SECCION F O R M A C I O N*/
+#formacion {
+    margin: auto;
+    padding: 100px 15px 220px;
+    color: #000;
+    text-align: center;
+    background-color: #cdedef;
+  }
+  
+#formacion .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+  }
+  
+#formacion .linea-de-tiempo ul{
+    list-style: none;
+    position: relative;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-inline-start: 0px;
+  }
+  
+  #formacion .linea-de-tiempo ul::before {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 105%;
+    background-color: #000;
+    top: -2%;
+    left: 50%;
+    border-radius: 30px;
+}
+  
+#formacion .linea-de-tiempo ul li{
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px; 
+    width: 48%;
+    margin-top: 50px;
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+
+#formacion .linea-de-tiempo ul li .animcion{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#formacion .linea-de-tiempo ul li:nth-child(odd){
+    left: 52%;
+}
+
+#formacion .linea-de-tiempo ul li:hover{
+    background-color: #8a8a8a;
+    color: #fff;
+    transition: .5s;
+}
+
+#formacion .linea-de-tiempo ul li h3 {
+    color: #4accd4;;
+}
+  
+#formacion .linea-de-tiempo ul li p {
+    font-style: italic;
+    padding-top: 10px;
+}
+  
+#formacion .linea-de-tiempo ul li .date {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #4accd4;
+    color: #fff;
+    border-radius: 5px;
+    top: -32px;
+    right: 0px;
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+  
+#formacion .linea-de-tiempo ul li:hover .date {
+    background-color: #8a8a8a;
+    transition: .5s;
+}
+
+#formacion .linea-de-tiempo ul li .circle{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    top: -32px;
+    right: calc(-4% - 11.5px);
+}
+  
+#formacion .linea-de-tiempo ul li:nth-child(odd) .date{
+    left: 0px;
+    width: fit-content;
+}
+  
+#formacion .linea-de-tiempo ul li:nth-child(odd) .circle {
+    top: -30px;
+    left: calc(-4% - 8.5px);
+}
+  
+/* SECCION RESPONSIVE WEB DESIGN:*/
+@media screen and (max-width: 850px) {
+
+    /*SECCION INICIO*/
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    /* seccion ACERCA DE MI */
+    #acercademi {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #acercademi h2 {
+        text-align: center;
+    }
+
+    #acercademi .fila-presentacion .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #acercademi .fila-presentacion {
+        display: block;
+    }
+
+    #acercademi .fila-presentacion .contenedor-foto img {
+        padding: 8px;
+    }
+
+    #acercademi .fila-presentacion .acercademi h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #acercademi .fila-datos-personales ul {
+        display: block;
+    }
+
+    #acercademi .fila-datos-personales ul li {
+        margin: 10px auto;
+    }
+    
+
+    /* seccion HABILIDADES*/
+    #habilidades {
+        padding: 50px 15px;
+    }
+
+    #habilidades .fila {
+        display: block;
+    }
+
+    #habilidades .fila .habilidades {
+        margin: 15px auto;
+    }
+
+    /* seccion IDIOMAS*/
+    .contenedor-idiomas {
+        padding: 50px 20px;
+    }
+
+    /* SECCION EXPERIENCIA LABORAL */
+    #experiencia-laboral {
+        padding: 50px 0;
+    }
+
+    #experiencia-laboral .fila {
+        display: block;
+    }
+
+    #experiencia-laboral .fila .proyecto {
+        margin: 15px auto;
+        width: 400px;
+        height: 300px;
+    }
+    
+}
